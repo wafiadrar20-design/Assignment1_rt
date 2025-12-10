@@ -51,12 +51,10 @@ class DistanceNode(Node):
 
         self.distance_pub.publish(Float32(data=dist))
 
-        # Too close
         if dist < self.threshold and self.moving_turtle in ["turtle1", "turtle2"]:
             self.get_logger().info(f"Too close! Stopping {self.moving_turtle}")
             self.stop_robot(self.moving_turtle)
 
-        # Boundaries
         for name, pose in [("turtle1", self.pose1), ("turtle2", self.pose2)]:
             if pose.x < self.min_b or pose.x > self.max_b or pose.y < self.min_b or pose.y > self.max_b:
                 self.get_logger().info(f"{name} out of bounds. Stopping.")
