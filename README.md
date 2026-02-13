@@ -1,8 +1,11 @@
 ROS 2 Turtlesim Control and Safety System (Assignment 1)
 
 Author: Amri Abdelouafi
+
 Student ID: 7708121
+
 ROS 2 Distro: Jazzy
+
 Simulator: turtlesim
 
 ⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻⸻
